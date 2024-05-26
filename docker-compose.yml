@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  metrics:
+   
+    build: /home/khaled/Desktop/metric/CloudWatch
+    ports:
+      - "4000:4000"
+  logs_measures_errors:
+   
+    build: /home/khaled/Desktop/metric/ELK
+    ports:
+      - "5001:5001"
+
+  
+ 
