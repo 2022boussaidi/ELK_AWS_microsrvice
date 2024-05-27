@@ -90,5 +90,5 @@ module.exports = {
   getLastMeasures,
   getLastMeasuresByTime,
   getActionByRobot,
-  checkErrors,
+ 
 };

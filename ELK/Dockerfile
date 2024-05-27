@@ -18,4 +18,4 @@ COPY . .
 # EXPOSE <port>
 
 # Command to run the service
-CMD ["node", "server.js"]   # Adjust the main JavaScript file name here
+CMD ["node", "app.js"]   # Adjust the main JavaScript file name here
