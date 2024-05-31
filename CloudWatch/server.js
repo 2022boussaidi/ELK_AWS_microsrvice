@@ -1,4 +1,5 @@
 const express = require('express');
+const eurekaHelper = require('./eureka-helper');
 const bodyParser = require('body-parser');
 const { getMetrics, getNetworkIn , getNetworkOut, getCPUCreditUsage} = require('./controllers/metricsController'); // Assuming your controller file is named 'metricsController.js'
 
@@ -29,4 +30,5 @@ app.get('/metrics', (req, res) => cloudWatchController.getMetricStatistics(req, 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
+  eurekaHelper.registerWithEureka('cloudwatch-service', PORT);
 });

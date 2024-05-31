@@ -30,8 +30,8 @@ app.use('/api/alerts', alertController);
 
 
 
-const PORT = process.env.PORT || 6000;
+const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
-eurekaHelper.registerWithEureka('ELK-service', PORT);
+eurekaHelper.registerWithEureka('elastic-service', PORT);
 
 

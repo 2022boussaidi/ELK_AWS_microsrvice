@@ -50,9 +50,9 @@ const fetchErrorMetrics = async () => {
           {
             range: {
               '@timestamp': {
-                format: 'strict_date_optional_time',
-                gte: formatDate(fifteenMinutesAgo),
-                lte: formatDate(now),
+                "format": "strict_date_optional_time",
+                "gte": "2024-05-26T23:00:00.000Z",
+                "lte": "2024-05-27T22:59:59.999Z"
               },
             },
           },
@@ -93,9 +93,9 @@ const fetchCountLogs = async () => {
           {
             range: {
               '@timestamp': {
-                format: 'strict_date_optional_time',
-                gte: formatDate(fifteenMinutesAgo),
-                lte: formatDate(now),
+                "format": "strict_date_optional_time",
+                  "gte": "2024-05-26T23:00:00.000Z",
+                  "lte": "2024-05-30T22:59:59.999Z"
               },
             },
           },
@@ -132,7 +132,7 @@ const fetchLogs = async () => {
                 
                   "format": "strict_date_optional_time",
                   "gte": "2024-05-26T23:00:00.000Z",
-                  "lte": "2024-05-27T22:59:59.999Z"
+                  "lte": "2024-05-30T22:59:59.999Z"
               },
             },
           },
@@ -186,9 +186,9 @@ const fetchErrorByTime = async () => {
           {
             range: {
               '@timestamp': {
-                format: 'strict_date_optional_time',
-                gte: formatDate(fifteenMinutesAgo),
-                lte: formatDate(now),
+                "format": "strict_date_optional_time",
+                "gte": "2024-05-26T23:00:00.000Z",
+                "lte": "2024-05-30T22:59:59.999Z"
               },
             },
           },
@@ -220,9 +220,9 @@ const fetchTotalLogs = async () => {
           {
             range: {
               '@timestamp': {
-                format: 'strict_date_optional_time',
-                gte: formatDate(fifteenMinutesAgo),
-                lte: formatDate(now),
+                "format": "strict_date_optional_time",
+                "gte": "2024-05-26T23:00:00.000Z",
+                "lte": "2024-05-30T22:59:59.999Z"
               },
             },
           },
@@ -294,9 +294,9 @@ const fetchLastMeasures = async () => {
           {
             "range": {
               "@timestamp": {
-                "format": 'strict_date_optional_time',
-                "gte": formatDate(fifteenMinutesAgo),
-                "lte": formatDate(now),
+                "format": "strict_date_optional_time",
+                  "gte": "2024-05-26T23:00:00.000Z",
+                  "lte": "2024-05-30T22:59:59.999Z"
               }
             }
           }
@@ -380,9 +380,9 @@ const fetchLastMeasuresByTime = async () => {
           {
             "range": {
               "@timestamp": {
-                "format": 'strict_date_optional_time',
-                "gte": formatDate(fifteenMinutesAgo),
-                "lte": formatDate(now),
+                "format": "strict_date_optional_time",
+                  "gte": "2024-05-26T23:00:00.000Z",
+                  "lte": "2024-05-30T22:59:59.999Z"
               }
             }
           }
@@ -449,9 +449,9 @@ const fetchActionByRobot = async () => {
           {
             "range": {
               "@timestamp": {
-                "format": 'strict_date_optional_time',
-                "gte": formatDate(fifteenMinutesAgo),
-                "lte": formatDate(now),
+                "format": "strict_date_optional_time",
+                  "gte": "2024-05-26T23:00:00.000Z",
+                  "lte": "2024-05-30T22:59:59.999Z"
               }
             }
           }
