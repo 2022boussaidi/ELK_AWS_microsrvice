@@ -1,5 +1,7 @@
 version: '3'
-
+volumes:
+    prometheus_data: {}
+    grafana_data: {}
 services:
   metrics:
    
@@ -12,5 +14,4 @@ services:
     ports:
       - "5001:5001"
 
-  
  
