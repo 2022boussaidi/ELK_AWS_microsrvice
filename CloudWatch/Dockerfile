@@ -10,8 +10,8 @@ COPY package*.json ./
 # Install dependencies
 RUN npm install
 # Set environment variables
-ENV AWS_ACCESS_KEY_ID=AKIAY7K6VMFC5MTV2EET
-ENV AWS_SECRET_ACCESS_KEY=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
+ENV AWS_ACCESS_KEY_ID=********************************
+ENV AWS_SECRET_ACCESS_KEY=***********************************
 
 # Copy the rest of the application code
 COPY . .
